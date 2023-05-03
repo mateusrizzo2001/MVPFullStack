@@ -6,7 +6,8 @@
 </head>
 <body>
 	<script src="app.js"></script>
-    <h1>Cadastrar livro</h1>
+    <h1>BookList - Sua estante virtual!</h1>
+	<h2>Cadastrar livro</h2>
 	<form action="/cadastrar_livro" method="POST">
 		<label for="titulo">Título:</label>
 		<input type="text" id="titulo" name="titulo"><br><br>
@@ -17,18 +18,40 @@
 		<input type="submit" value="Cadastrar">
 	</form>
 
-	<h1>Buscar livro</h1>
+	<h2>Buscar livro</h2>
 	<form action="/buscar_livro" method="GET">
 		<label for="id">ID do livro:</label>
 		<input type="text" id="id" name="id"><br><br>
 		<input type="submit" value="Buscar">
 	</form>
 
-	<h1>Deletar livro</h1>
+	<h2>Deletar livro</h2>
 	<form action="/deletar_livro" method="POST">
 		<label for="id">ID do livro:</label>
 		<input type="text" id="id" name="id"><br><br>
 		<input type="submit" value="Deletar">
 	</form>
+
+	<h2>Lista de livros Cadastrados:</h2>
+	<table>
+		<tr>
+			<th>Título</th>
+			<th>Autor</th>
+			<th>Ano</th>
+		</tr>
+
+		<tr>
+			<td>Harry Potter e a Pedra Filosofal</td>
+			<td>J.K Rowling</td>
+			<td>1997</td>
+		</tr>
+
+		<tr>
+			<td>Cadastre um livro</td>
+			<td>----</td>
+			<td>----</td>
+		</tr>
+
+	</table>
 </body>
 </html>
